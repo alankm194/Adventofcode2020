@@ -56,25 +56,4 @@ public class ReadPuzzleInputFiles {
         return puzzleInput;
     }
 
-    public static List<String> getListOfString(String file) {
-        List<String> puzzleInput = new ArrayList<>();
-        try (BufferedReader in = new BufferedReader(new FileReader(file))){
-            String str;
-            StringBuilder sb = new StringBuilder();
-            while ((str = in.readLine()) != null) {
-                if (!str.equals("")) {
-                    sb.append(str);
-                } else {
-                    puzzleInput.add(sb.toString());
-                    sb.setLength(0);
-                }
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return puzzleInput;
-    }
-
 }

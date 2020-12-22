@@ -25,6 +25,21 @@ public class main {
         System.out.println("Day 3 part 1 answer: " +day3.findPuzzleAnswer1(puzzleInput3));
         System.out.println("Day 3 part 2 answer: " +day3.findPuzzleAnswer2(puzzleInput3));
 
+        Day4 day4= new Day4();
+        String fileName4 = day4.getClass().getClassLoader().getResource("day4input.txt").getFile();
+        System.out.println("Day 4 part 1 answer: " + day4.findPuzzleAnswer1(fileName4));
+        System.out.println("Day 4 part 2 answer: " + day4.findPuzzleAnswer2(fileName4));
 
+        Day5 day5= new Day5();
+        String fileName5 = day5.getClass().getClassLoader().getResource("day5input.txt").getFile();
+        List<String> puzzleInput5 = ReadPuzzleInputFiles.getListOfStringFromFile(fileName5);
+        System.out.println("Day 5 part 1 answer: " + day5.findPuzzleAnswer1(puzzleInput5));
+        System.out.println("Day 5 part 2 answer: " + day5.findPuzzleAnswer2(puzzleInput5));
+
+
+        Day6 day6= new Day6();
+        String fileName6 = day6.getClass().getClassLoader().getResource("day6input.txt").getFile();
+        System.out.println("Day 6 part 1 answer: " + day6.findPuzzleAnswer1(fileName6));
+        System.out.println("Day 6 part 2 answer: " + day6.findPuzzleAnswer2(fileName6));
     }
 }
